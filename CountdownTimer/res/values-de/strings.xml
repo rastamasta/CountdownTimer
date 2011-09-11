@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 Jonathan Dimond
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources>
+	<string name="timer_uninitialised">00:00:00</string>
+	<string name="start">Start!</string>
+	<string name="cancel">Countdown abbrechen</string>
+	<string name="new_timer">Neuer Countdown</string>
+	<string name="silent">Stumm</string>
+	<string name="description">Beschreibung (optional)</string>
+	<string name="timer_expired">Timer abgelaufen!</string>
+	<string name="click_to_remove">Hier klicken um Benachrichtung zu schliessen!</string>
+	<string name="recently_used">Zuletzt benutzte Timer</string>
+	<string name="settings">Einstellungen</string>
+	<string name="vibrate">Vibrationsalarm</string>
+	<string name="insistent">Hartnäckig</string>
+	<string name="insistent_desc">Alarm klingelt bis man ihn abschaltet</string>
+	<string name="alarm_sound">Alarm Klingelton</string>
+	<string name="volume">Lautstärke</string>
+	<string name="volume_desc">Welche Lautstärkequelle soll benutzt werden</string>
+	<string name="refresh_interval">Aktualisierungsinterval</string>
+	<string name="refresh_notice_title">Wichtige Information zur Batterie</string>
+	<string name="refresh_notice_text">
+Androids Widget API ist nicht für häufige Updates ausgelegt. Diese können großen
+Batterieverbrauch und Ruckeln und Abstürze des Home Screens verursachen.
+Countdown Timer Widget ist allerdings so ausgelegt möglichst wenig Batterie zu verbrauchen.
+Wenn kein Alarm aktiv ist oder der Bildschirm aus ist, wird Countdown Timer Widget keine
+CPU Ressourcen oder Energie brauchen. Alarme werden aber noch weiterhin ausgelöst werden.
+Wenn der Batterieverbrauch drastisch gestiegen ist oder der Home Screen ruckelt kann man
+das Aktualisierungsinterval auf ein akzeptables Maß steigern.
+	</string>
+	<string name="about_title">Über</string>
+	<string name="about_text">
+Diese Software is unter der Apache Lizenz 2.0 lizensiert.\n
+\n
+Quellcode auf meiner Seite herunterladen: http://www.dimond.de\n
+\n
+-v0.3.3: Russische Sprachunterstützung\n
+-v0.3.2: Klingelton-Bug gefixt\n
+-v0.3.1: Lautstärke Option hinzugefügt\n
+-v0.3: Kürzlich benutzte Timer und Beschreibungen hinzugefügt\n
+-v0.2: Effizienzprobleme behoben\n
+-v0.1.3: Bugfixes\n
+-v0.1.2: Bugfixes\n
+-v0.1.1: Klingeltonauswahl hinzugefügt\n
+	</string>
+	<string name="help_title">Hilfe</string>
+	<string name="help_text">
+Dieses Programm ist ein Widget und keine App! Das Widget einfach in gewohnter Manier zum Homescreen
+hinzufügen. Um die Einstellungen später zu ändern einfach während dem Erstellen eines neuen Timers die
+Menü-Taste drücken.\n
+Falls der Homescreen hängt/abstürzt bitte \"Wichtige Information zur Batterie\" lesen!\n
+\n
+Irgendwelche Fragen/Anregungen? Dann schreib an countdowntimer@dimond.de
+	</string>
+	<string-array name="countdown_intervals">
+		<item>1 Sekunde</item>
+		<item>2 Sekunden</item>
+		<item>5 Sekunden</item>
+		<item>10 Sekunden</item>
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>1 Minute</item>
+		<item>2 Minuten</item>
+		<item>5 Minuten</item>
+	</string-array>
+	<string-array name="volume_sources">
+		<item>Klingelton Lautstärke</item>
+		<item>Medien Lautstärke</item>
+		<item>Wecker Lautstärke</item>
+		<item>Benachrichtigung Lautstärke</item>
+	</string-array>
+</resources>
