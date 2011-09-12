@@ -19,57 +19,57 @@ package de.dimond.countdowntimer;
 import java.io.Serializable;
 
 public class Alarm implements Comparable<Alarm>, Serializable {
-    private static final long serialVersionUID = -938682120428006492L;
+	private static final long serialVersionUID = -938682120428006492L;
 
-    public final long m_when;
-    public final String m_description;
-    public final boolean m_isSilent;
+	public final long m_when;
+	public final String m_description;
+	public final boolean m_isSilent;
 
-    public Alarm(long when, String description, boolean isSilent) {
-        this.m_when = when;
-        this.m_description = description;
-        this.m_isSilent = isSilent;
-    }
+	public Alarm(long when, String description, boolean isSilent) {
+		this.m_when = when;
+		this.m_description = description;
+		this.m_isSilent = isSilent;
+	}
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((m_description == null) ? 0 : m_description.hashCode());
-        result = prime * result + (m_isSilent ? 1231 : 1237);
-        result = prime * result + (int) (m_when ^ (m_when >>> 32));
-        return result;
-    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((m_description == null) ? 0 : m_description.hashCode());
+		result = prime * result + (m_isSilent ? 1231 : 1237);
+		result = prime * result + (int) (m_when ^ (m_when >>> 32));
+		return result;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Alarm other = (Alarm) obj;
-        if (m_description == null) {
-            if (other.m_description != null)
-                return false;
-        } else if (!m_description.equals(other.m_description))
-            return false;
-        if (m_isSilent != other.m_isSilent)
-            return false;
-        if (m_when != other.m_when)
-            return false;
-        return true;
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Alarm other = (Alarm) obj;
+		if (m_description == null) {
+			if (other.m_description != null)
+				return false;
+		} else if (!m_description.equals(other.m_description))
+			return false;
+		if (m_isSilent != other.m_isSilent)
+			return false;
+		if (m_when != other.m_when)
+			return false;
+		return true;
+	}
 
-    @Override
-    public String toString() {
-        return "Alarm [m_when=" + m_when + ", m_isSilent=" + m_isSilent + ", m_description=" + m_description + "]";
-    }
+	@Override
+	public String toString() {
+		return "Alarm [m_when=" + m_when + ", m_isSilent=" + m_isSilent + ", m_description=" + m_description + "]";
+	}
 
-    @Override
-    public int compareTo(Alarm another) {
-        return Long.signum(m_when - another.m_when);
-    }
+	@Override
+	public int compareTo(Alarm another) {
+		return Long.signum(m_when - another.m_when);
+	}
 
 }
